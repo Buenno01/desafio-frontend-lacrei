@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 const Button = styled.button<{ outline?: boolean }>`
-  color: ${props => props.outline ? '#018762': 'white'};
-  border: ${props => props.outline ? '2px solid #018762' : 'none'};
-  background: ${props => props.outline ? 'none' : '#018762'};
+  color: ${(props) => (props.outline ? '#018762' : 'white')};
+  border: ${(props) => (props.outline ? '2px solid #018762' : 'none')};
+  background: ${(props) => (props.outline ? 'none' : '#018762')};
   padding: 0.625rem 2rem;
   width: 100%;
   display: flex;

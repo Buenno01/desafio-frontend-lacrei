@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const HeaderRightMenuContainer = styled.div<{ isMenuOpen: boolean }>`
-    display: ${props => props.isMenuOpen ? 'flex' : 'none'};
+    display: ${(props) => (props.isMenuOpen ? 'flex' : 'none')};
     position: absolute;
     top: 100%;
     right: 0;

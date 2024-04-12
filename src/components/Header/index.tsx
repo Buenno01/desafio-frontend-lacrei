@@ -1,8 +1,8 @@
+import { useState } from 'react';
 import HeaderContainer from '../../assets/wrappers/HeaderContainer';
 import logo from '../../assets/images/logo-lacrei-horizontal.svg';
 import HeaderLogo from './HeaderLogo';
 import BurguerMenu from './BurguerMenu';
-import { useState } from 'react';
 import HeaderRightMenu from './HeaderRightMenu';
 import Container from '../../assets/wrappers/Container';
 import HeaderWrapper from '../../assets/wrappers/HeaderWrapper';
@@ -17,8 +17,8 @@ function Header() {
           <BurguerMenu
             toggleMenu={ () => setIsMenuOpen(!isMenuOpen) }
             isMenuOpen={ isMenuOpen }
-            />
-          <HeaderRightMenu isMenuOpen={ isMenuOpen }></HeaderRightMenu>
+          />
+          <HeaderRightMenu isMenuOpen={ isMenuOpen } />
         </HeaderWrapper>
       </Container>
     </HeaderContainer>

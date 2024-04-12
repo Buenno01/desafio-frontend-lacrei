@@ -5,7 +5,7 @@ import HeaderLink from './HeaderLink';
 
 type HeaderRightMenuProps = {
   isMenuOpen: boolean;
-}
+};
 
 const links = [
   { name: 'Quem somos', url: '#' },
@@ -17,11 +17,13 @@ function HeaderRightMenu({ isMenuOpen }: HeaderRightMenuProps) {
     <HeaderRightMenuContainer isMenuOpen={ isMenuOpen }>
       <HeaderLinkWrapper>
         {
-          links.map(link => (
-            <HeaderLink href={link.url}>{ link.name }</HeaderLink>
+          links.map((link) => (
+            <HeaderLink key={ link.name } href={ link.url }>
+              { link.name }
+            </HeaderLink>
           ))
         }
-      <Button>Entrar</Button>
+        <Button>Entrar</Button>
       </HeaderLinkWrapper>
     </HeaderRightMenuContainer>
   );
