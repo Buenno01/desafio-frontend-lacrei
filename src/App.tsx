@@ -16,7 +16,7 @@ function App() {
       <Header />
       <Content />
       <Footer />
-      <ScrollToTopBtn onClick={ handleScrollToTop }>
+      <ScrollToTopBtn onClick={ handleScrollToTop } data-testid="scroll-btn">
         <IoIosArrowUp />
       </ScrollToTopBtn>
     </div>
