@@ -18,12 +18,16 @@ function HeaderRightMenu({ isMenuOpen }: HeaderRightMenuProps) {
       <HeaderLinkWrapper>
         {
           links.map((link) => (
-            <HeaderLink key={ link.name } href={ link.url }>
-              { link.name }
-            </HeaderLink>
+            <li>
+              <HeaderLink key={ link.name } href={ link.url }>
+                { link.name }
+              </HeaderLink>
+            </li>
           ))
         }
-        <Button>Entrar</Button>
+        <li>
+          <Button>Entrar</Button>
+        </li>
       </HeaderLinkWrapper>
     </HeaderRightMenuContainer>
   );
