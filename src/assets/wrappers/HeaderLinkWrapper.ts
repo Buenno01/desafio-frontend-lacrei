@@ -8,6 +8,10 @@ const HeaderLinkWrapper = styled.nav`
     margin: 0 auto;
     gap: 0.2rem;
 
+    > li {
+        list-style: none;
+    }
+
     @media (min-width: 640px) {
         flex-direction: row;
         gap: 1rem;
