@@ -30,7 +30,6 @@ const ContentTextWrapper = styled.div`
     width: auto;
 
     > p {
-      font-size: 1.2rem;
       line-height: 1.5rem;
       font-weight: 400;
     }
