@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const HeaderRightMenuContainer = styled.div<{ isMenuOpen: boolean }>`
-    display: ${props => props.isMenuOpen ? 'flex' : 'none'};
+    display: ${(props) => (props.isMenuOpen ? 'flex' : 'none')};
     position: absolute;
     top: 100%;
     right: 0;
@@ -9,7 +9,7 @@ const HeaderRightMenuContainer = styled.div<{ isMenuOpen: boolean }>`
     background: #fff;
     padding-bottom: 1rem;
 
-    @media (min-width: 640px) {
+    @media (min-width: 768px) {
         display: flex;
         position: static;
         background: none;
