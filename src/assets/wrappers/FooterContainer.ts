@@ -7,13 +7,18 @@ const FooterContainer = styled.footer`
   width: 100%;
   padding: 2rem 1rem;
   gap: 3rem;
+  margin-top: 1rem;
 
-  @media screen and (min-width: 768px) {
-    flex-direction: row;
-    justify-content: space-between;
+  border-top: 1px solid #B2DFD0;
+  border-bottom: 1px solid #B2DFD0;
+
+  @media screen and (min-width: 1024px) {
+    margin: 0;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1536px) {
+    flex-direction: row;
+    justify-content: space-between;
     padding: 3rem 0;
   }
 `;
