@@ -30,14 +30,14 @@ const Button = styled.button<{ outline?: boolean }>`
 
   &.burguer-menu {
     padding: 0.2rem;
-    height: 2.6rem;
-    width: 2.6rem;
+    height: 2.3rem;
+    width: 2.3rem;
     border:none;
     font-size: 2.6rem;
     position: absolute;
     right: 1rem;
     box-shadow: none;
-    background: #fff;
+    background: none;
 
     @media (min-width: 768px) {
       display: none;
